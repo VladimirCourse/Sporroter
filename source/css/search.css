@@ -33,3 +33,10 @@
 .hidden-custom {
     display: none;
 }
+
+@media (max-width: 768px) {
+    .controls-inline .form-group {
+        display: block;
+        width: 100%;
+    }
+}

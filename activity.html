@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Activity</title>
-    <link rel="stylesheet" href="./source/css/base.css">
-    <link rel="stylesheet" href="./source/css/index.css">
-    <link rel="stylesheet" href="./source/css/search.css">
-    <link rel="stylesheet" href="./source/css/discover.css">
-    <link rel="stylesheet" href="./source/css/activity.css">
+    <link rel="stylesheet" href="./production/css/base.css">
+    <link rel="stylesheet" href="./production/css/index.css">
+    <link rel="stylesheet" href="./production/css/search.css">
+    <link rel="stylesheet" href="./production/css/discover.css">
+    <link rel="stylesheet" href="./production/css/activity.css">
 </head>
 <body>
     <nav class="container-fluid header">
-        <h2><a class="sportrotter" href="#">Sportrotter</a></h2>
+        <h1><a class="sportrotter" href="index.html">Sportrotter</a></h1>
         <ul class="list-inline">
-            <li><a href="index.html">Main</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li class="active"><a href="activity.html">Activity</a></li>
-              <li><a href="discover.html">Discover</a></li>
-              <li><a href="user.html">User</a></li>
+            <li class="active"><a href="discover.html">Découvrir</a></li>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
         </ul>
     </nav>
     <div class="hero center-block" style="background:url('source/images/Poxod-v-gory.jpg') center no-repeat; background-size:cover;">
@@ -33,11 +31,13 @@
                 <div class="col-sm-7">
                     <div class="round-card">
                         <div class="avatar pull-left">
-                            <img class="profile-logo" alt="logo" src="./source/images/man.jpg" style="center">
+                            <img class="profile-logo" alt="logo" src="./production/images/man.jpg" style="center">
                             <span class="profile-text">George</span>
+                            <a href="user.html"><span class="spanlink"></span></a>
                         </div>
                         <div class="about-org">
                             <h3>Organizer Mikhail</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -46,7 +46,21 @@
                     <div class="booking">
                         <div class="round-card">
                             <h3>Reserve</h3>
-                            fields go here.
+                            <form action="#" method="post" class="controls-inline">
+                                <div class="form-group form-group-makeinline">
+                                    <input type="text" class="form-control input-withicon input-lg" placeholder="June 23">
+                                    <span class="material-icons input-icon">today</span>
+                                </div>
+                                <div class="form-group form-group-makeinline">
+                                    <input type="text" class="form-control input-withicon input-lg" placeholder="1">
+                                    <span class="material-icons input-icon">people</span>
+                                </div>
+                                <div class="form-group form-group-makeinline">
+                                    <button type="button" class="btn btn-success input-withicon btn-lg">Reserve</button>
+                                    <span class="material-icons input-icon" style="color: #fff">credit_card</span>
+                                    <span class="booking-price">150 euro</span>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -64,19 +78,19 @@
                             <div class="container-fluid ratings">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-3 text-center">
-                                        <img src="./source/images/rating1.png" alt="">
+                                        <img src="./production/images/rating1.png" alt="">
                                         <p>Rating 1</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 text-center">
-                                        <img src="./source/images/rating2.png" alt="">
+                                        <img src="./production/images/rating2.png" alt="">
                                         <p>Rating 2</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 text-center">
-                                        <img src="./source/images/rating3.png" alt="">
+                                        <img src="./production/images/rating3.png" alt="">
                                         <p>Rating 3</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-3 text-center">
-                                        <img src="./source/images/rating4.png" alt="">
+                                        <img src="./production/images/rating4.png" alt="">
                                         <p>Rating 4</p>
                                     </div>
                                 </div>
@@ -84,8 +98,9 @@
                             <div class="container-fluid comments">
                                 <div class="comment">
                                     <div class="avatar pull-left">
-                                        <img class="profile-logo" alt="logo" src="./source/images/man.jpg" style="center">
+                                        <img class="profile-logo" alt="logo" src="./production/images/man.jpg" style="center">
                                         <span class="profile-text">George</span>
+                                        <a href="user.html"><span class="spanlink"></span></a>
                                     </div>
                                     <div class="commentbody-rating-date">
                                         <div class="commentbody">
@@ -106,8 +121,9 @@
                                 <hr />
                                 <div class="comment">
                                     <div class="avatar pull-left">
-                                        <img class="profile-logo" alt="logo" src="./source/images/man.jpg" style="center">
+                                        <img class="profile-logo" alt="logo" src="./production/images/man.jpg" style="center">
                                         <span class="profile-text">George</span>
+                                        <a href="user.html"><span class="spanlink"></span></a>
                                     </div>
                                     <div class="commentbody-rating-date">
                                         <div class="commentbody">
@@ -136,7 +152,7 @@
     <div class="footer">
         <div class="container center-block">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <h2 class="sportrotter">Sportrotter</h2>
                 </div>
                 <div class="col-sm-4">
@@ -147,15 +163,15 @@
                         <li><a href="#">Site map</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-5">
                     <h2>Latest Activities</h2>
                     <form class="form-inline">
                         <div class="form-group">
                             <label for="email-subscribe" class="sr-only">Email</label>
-                            <input type="email" class="form-control input-withicon" id="email-subscribe" placeholder="Email">
+                            <input type="email" class="form-control input-withicon input-lg" id="email-subscribe" placeholder="Email">
                             <span class="material-icons input-icon">email</span>
                         </div>
-                        <button type="submit" class="btn btn-default">Subscribe</button>
+                        <button type="submit" class="btn btn-success btn-lg">Subscribe</button>
                     </form>
                     <p>No spam, for sure.</p>
                 </div>
@@ -164,8 +180,7 @@
     </div>
 </body>
     <!-- jQuery CDN -->
-    <script src="./source/js/jquery.min.js"></script>
+    <script src="./production/js/jquery.min.js"></script>
     <!-- Bootstrap Js CDN -->
-    <script src="./source/js/bootstrap.min.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="./production/js/bootstrap.min.js"></script>
 </html>

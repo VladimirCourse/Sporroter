@@ -15,6 +15,9 @@
 .round-card h3 {
     margin-top: 0;
 }
+.round-card .controls-inline {
+    margin-bottom: 0;
+}
 
 .inline-block {
     display: inline-block;
@@ -26,6 +29,13 @@
 
 .activity-description {
     margin-bottom: 48px;
+}
+
+.booking-price {
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 24px;
+    
 }
 
 .ratings {
